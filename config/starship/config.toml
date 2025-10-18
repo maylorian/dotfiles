@@ -1,0 +1,45 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+right_format = '$status'
+
+[directory]
+truncation_length = 5
+
+[sudo]
+style = 'bold green'
+symbol = '👩‍💻 '
+disabled = false
+
+[memory_usage]
+style = 'bold dimmed yellow'
+disabled = false
+
+[hostname]
+ssh_symbol = '  '
+
+[git_metrics]
+disabled = false
+
+[status]
+format = '[$symbol $common_meaning$signal_name$maybe_int \[$status\]]($style) '
+symbol = '󰅖'
+disabled = false
+
+[[battery.display]]
+threshold = 25
+
+# Disabled modules
+[gradle]
+disabled = true
+
+[kotlin]
+disabled = true
+
+[java]
+disabled = true
+
+[package]
+disabled = true
+
+[nodejs]
+disabled = true
